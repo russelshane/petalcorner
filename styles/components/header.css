@@ -1,0 +1,35 @@
+.masthead {
+  padding: 36px 0 36px 0;
+  display: flex;
+  justify-content: center;
+  background: var(--background);
+  position: fixed;
+  width: 100%;
+  border-bottom: 4px solid var(--office-brown);
+}
+
+.masthead-logo {
+  max-width: 280px;
+  cursor: pointer;
+}
+
+.masthead-logo:hover {
+  opacity: 0.75;
+}
+
+.masthead > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.masthead nav a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.masthead nav {
+  display: flex;
+  grid-gap: 20px;
+}

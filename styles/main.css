@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap");
+@import "./components/container.css";
+@import "./components/header.css";
+@import "./components/buttons.css";
+@import "./components/hero.css";
+
+:root {
+  /**
+   * Global application colors
+   */
+  --foreground: #0b1215;
+  --background: #ffffff;
+  --office-brown: #94716b;
+  --luxe-brown: #b79891;
+  --jade-green: #c0cfc5;
+  --slate: #657382;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  font-family: Inter, sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--foreground);
+}
