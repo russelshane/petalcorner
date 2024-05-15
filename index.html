@@ -18,48 +18,62 @@
 
     <!-- Resources -->
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <link rel="preload" href="https://api.fontshare.com" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400&f[]=rosaline@400&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header class="masthead">
       <div class="container">
+        <div class="menu-button">
+          <span></span>
+          <span></span>
+        </div>
         <img
-          class="masthead-logo"
-          src="assets/logo-obsidian-full.svg"
-          alt="petalcorner."
+          class="logo"
+          src="./assets/branding/logo-obsidian-full.svg"
+          alt="Petal Corner"
         />
-
-        <!-- Header (Desktop) Navigation -->
-        <nav>
-          <a href="">Home</a>
-          <a href="">Deliveries</a>
-          <a href="">Events</a>
-          <a href="">About Us</a>
-        </nav>
-
         <button class="button-outline">Contact</button>
       </div>
     </header>
-    <section class="hero">
-      <div class="lede">
-        <span class="separator"></span>
-        <h1>Farm-Fresh Flowers</h1>
-        <p>We make the nicest ways to say that you care about someone.</p>
-        <br />
-        <button class="button-outline">Order Yours</button>
-      </div>
-      <div class="backdrops">
-        <img
-          class="hero-1"
-          src="assets/flowers/hero-1.jpg"
-          alt="petalcorner wedding flowers"
-        />
-        <img
-          class="hero-2"
-          src="assets/flowers/hero-2.jpg"
-          alt="petalcorner event flowers"
-        />
-      </div>
-    </section>
+
+    <div class="hero">
+      <section class="hero-container">
+        <h1>FARM-FRESH FLOWERS</h1>
+        <p>
+          We&apos;re proud to offer beautiful flowers that are always 100%
+          arranged and delivered by expert local florists.
+        </p>
+      </section>
+    </div>
+
+    <div class="featured">
+      <section class="featured-container">
+        <div class="featured-item">
+          <img class="featured-item-lede" src="" alt="" />
+          <h2 class="featured-item-title">sdfaasdfsdf</h2>
+          <span class="featured-item-price"></span>
+        </div>
+        <div class="featured-item">
+          <img class="featured-item-lede" src="" alt="" />
+          <h2 class="featured-item-title">asdfasdf</h2>
+          <span class="featured-item-price"></span>
+        </div>
+        <div class="featured-item">
+          <img class="featured-item-lede" src="" alt="" />
+          <h2 class="featured-item-title">asdfasdf</h2>
+          <span class="featured-item-price"></span>
+        </div>
+        <div class="featured-item">
+          <img class="featured-item-lede" src="" alt="" />
+          <h2 class="featured-item-title">asdfasdf</h2>
+          <span class="featured-item-price"></span>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
