@@ -16,3 +16,7 @@
   object-fit: contain;
   opacity: 0.85;
 }
+
+.masthead .logo:hover {
+  opacity: 0.65;
+}

@@ -1,12 +1,45 @@
 .featured {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 16px;
+  flex-direction: column;
+  grid-gap: 30px;
 }
 
 .featured-container {
   max-width: 800px;
   display: grid;
   grid-template-columns: auto auto;
+  grid-gap: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .featured-container {
+    grid-template-columns: auto;
+  }
+}
+
+.featured-item {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  cursor: pointer;
+}
+
+.featured-item:hover h2 {
+  text-decoration: underline;
+}
+
+.featured-item h2 {
+  font-size: 24px;
+}
+
+.featured-item img {
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.featured-item span {
+  color: var(--office-brown);
+  font-weight: 500;
 }

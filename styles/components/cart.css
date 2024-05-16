@@ -1,0 +1,14 @@
+.cart {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  flex-direction: column;
+}
+
+.cart h1 {
+  font-size: 24px;
+}
