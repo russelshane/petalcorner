@@ -12,3 +12,17 @@
 .cart h1 {
   font-size: 24px;
 }
+
+.cart-items {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  grid-gap: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.cart-items li {
+  border: 2px solid var(--jade-green);
+  padding: 16px;
+}

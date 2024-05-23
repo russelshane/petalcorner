@@ -4,7 +4,6 @@
     <!--
       Darsler Russel Shane Fortes
       Christian Jonard Piamonte
-      Troy Dela Pena
      -->
     <title>Bouquets, Roses, Tulips, Dried Flowers | petalcorner.</title>
 
@@ -29,16 +28,28 @@
     <header class="masthead">
       <div class="container">
         <a href="index.html" style="display: block; text-decoration: none">
-          <button class="button-outline">Home</button>
-        </a>
-        <a href="index.html" style="display: block; text-decoration: none">
           <img
             class="logo"
             src="./assets/branding/logo-obsidian-full.svg"
             alt="Petal Corner"
           />
         </a>
-        <button class="button-outline">Contact</button>
+        <nav class="masthead-nav">
+          <a href="index.html" style="display: block; text-decoration: none">
+            <button class="button-ghost">Home</button>
+          </a>
+          <a href="about.html" style="display: block; text-decoration: none">
+            <button class="button-ghost">About</button>
+          </a>
+          <a href="contact.html" style="display: block; text-decoration: none">
+            <button class="button-ghost">Contact</button>
+          </a>
+          <a href="cart.html" style="display: block; text-decoration: none">
+            <button class="button-outline">
+              My Cart (<span id="cartItemNumber">0</span>)
+            </button>
+          </a>
+        </nav>
       </div>
     </header>
 
@@ -54,65 +65,144 @@
 
     <div class="featured">
       <section class="featured-container">
-        <a
-          href="items/sweet-and-pretty-bouquet.html"
-          style="display: block; text-decoration: none"
-        >
-          <div class="featured-item">
+        <div class="featured-item">
+          <a
+            href="items/sweet-and-pretty-bouquet.html"
+            style="display: block; text-decoration: none"
+          >
             <img
               class="featured-item-lede"
               src="assets/products/flower-1.webp"
               alt=""
             />
+          </a>
+
+          <a
+            href="items/sweet-and-pretty-bouquet.html"
+            style="
+              display: flex;
+              flex-direction: column;
+              grid-gap: 5px;
+              text-decoration: none;
+            "
+          >
             <h2 class="featured-item-title">Sweet & Pretty Bouquet</h2>
             <span class="featured-item-price">PHP 2,500</span>
-          </div>
-        </a>
+          </a>
 
-        <a
-          href="items/sweet-and-pretty-bouquet.html"
-          style="display: block; text-decoration: none"
-        >
-          <div class="featured-item">
+          <div>
+            <button
+              class="button-outline add-to-cart-button"
+              onClick="addToCart()"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <a
+            href="items/sweet-and-pretty-bouquet.html"
+            style="display: block; text-decoration: none"
+          >
             <img
               class="featured-item-lede"
               src="assets/products/flower-3.webp"
               alt=""
             />
+          </a>
+          <a
+            href="items/sweet-and-pretty-bouquet.html"
+            style="
+              display: flex;
+              flex-direction: column;
+              grid-gap: 5px;
+              text-decoration: none;
+            "
+          >
             <h2 class="featured-item-title">Light of My Life Bouquet</h2>
             <span class="featured-item-price">PHP 2,300</span>
+          </a>
+          <div>
+            <button
+              class="button-outline add-to-cart-button"
+              onClick="addToCart()"
+            >
+              Add to Cart
+            </button>
           </div>
-        </a>
+        </div>
 
-        <a
-          href="items/sweet-and-pretty-bouquet.html"
-          style="display: block; text-decoration: none"
-        >
-          <div class="featured-item">
+        <div class="featured-item">
+          <a
+            href="items/sweet-and-pretty-bouquet.html"
+            style="display: block; text-decoration: none"
+          >
             <img
               class="featured-item-lede"
               src="assets/products/flower-4.webp"
               alt=""
             />
+          </a>
+          <a
+            href="items/sweet-and-pretty-bouquet.html"
+            style="
+              display: flex;
+              flex-direction: column;
+              grid-gap: 5px;
+              text-decoration: none;
+            "
+          >
             <h2 class="featured-item-title">You're Precious Bouquet</h2>
             <span class="featured-item-price">PHP 1,900</span>
+          </a>
+
+          <div>
+            <button
+              class="button-outline add-to-cart-button"
+              onClick="addToCart()"
+            >
+              Add to Cart
+            </button>
           </div>
-        </a>
-        <a
-          href="items/sweet-and-pretty-bouquet.html"
-          style="display: block; text-decoration: none"
-        >
-          <div class="featured-item">
+        </div>
+
+        <div class="featured-item">
+          <a
+            href="items/sweet-and-pretty-bouquet.html"
+            style="display: block; text-decoration: none"
+          >
             <img
               class="featured-item-lede"
               src="assets/products/flower-2.webp"
               alt=""
             />
+          </a>
+
+          <a
+            href="items/sweet-and-pretty-bouquet.html"
+            style="
+              display: flex;
+              flex-direction: column;
+              grid-gap: 5px;
+              text-decoration: none;
+            "
+          >
             <h2 class="featured-item-title">Just Because Bouquet</h2>
             <span class="featured-item-price">PHP 3,200</span>
+          </a>
+
+          <div>
+            <button
+              class="button-outline add-to-cart-button"
+              onClick="addToCart()"
+            >
+              Add to Cart
+            </button>
           </div>
-        </a>
+        </div>
       </section>
     </div>
+    <script src="lib/cart.js"></script>
   </body>
 </html>

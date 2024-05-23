@@ -26,6 +26,19 @@
   </head>
 
   <body>
+    <script>
+      window.onload = function () {
+        var products = JSON.parse(localStorage.getItem("products"));
+        var cartItems = document.getElementById("myCart");
+        var cart = document.querySelector("cart-items");
+
+        products.forEach((product) => {
+          let li = document.createElement("li");
+          li.innerText = product;
+          cartItems.appendChild(li);
+        });
+      };
+    </script>
     <header class="masthead">
       <div class="container">
         <a href="index.html" style="display: block; text-decoration: none">
@@ -43,11 +56,10 @@
     </header>
 
     <div class="cart">
-      <h2>Your cart is empty.</h2>
+      <h2 id="isEmpty">Your cart</h2>
 
-      <a href="index.html" style="display: block; text-decoration: none">
-        <button class="button-outline">Start Shopping</button>
-      </a>
+      <!-- Cart Items -->
+      <ul class="cart-items" id="myCart"></ul>
     </div>
   </body>
 </html>

@@ -25,7 +25,8 @@
 }
 
 .hero-container p {
-  max-width: 480px;
-  font-size: 18px;
-  line-height: 28px;
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 32px;
+  color: vaR(--foreground);
 }

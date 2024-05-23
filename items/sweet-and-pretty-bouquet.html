@@ -4,7 +4,6 @@
     <!--
       Darsler Russel Shane Fortes
       Christian Jonard Piamonte
-      Troy Dela Pena
      -->
     <title>Sweet and Pretty Bouquet | petalcorner.</title>
 
@@ -28,17 +27,32 @@
   <body>
     <header class="masthead">
       <div class="container">
-        <a href="index.html" style="display: block; text-decoration: none">
-          <button class="button-outline">Home</button>
-        </a>
-        <a href="index.html" style="display: block; text-decoration: none">
+        <a href="../index.html" style="display: block; text-decoration: none">
           <img
             class="logo"
-            src="../assets/branding/logo-obsidian-full.svg"
+            src="./assets/branding/logo-obsidian-full.svg"
             alt="Petal Corner"
           />
         </a>
-        <button class="button-outline">Contact</button>
+        <nav class="masthead-nav">
+          <a href="../index.html" style="display: block; text-decoration: none">
+            <button class="button-ghost">Home</button>
+          </a>
+          <a href="../about.html" style="display: block; text-decoration: none">
+            <button class="button-ghost">About</button>
+          </a>
+          <a
+            href="../contact.html"
+            style="display: block; text-decoration: none"
+          >
+            <button class="button-ghost">Contact</button>
+          </a>
+          <a href="../cart.html" style="display: block; text-decoration: none">
+            <button class="button-outline">
+              My Cart (<span id="cartItemNumber">0</span>)
+            </button>
+          </a>
+        </nav>
       </div>
     </header>
 
@@ -53,8 +67,17 @@
           are set in a glass cylinder vase, making a wonderful gift to light up
           the face of its recipient.
         </p>
-        <a href="../cart.html" class="buy-button"> Buy Now </a>
+        <div>
+          <button
+            class="button-outline add-to-cart-button"
+            onClick="addToCart()"
+          >
+            Add to Cart
+          </button>
+        </div>
       </div>
     </div>
+
+    <script src="../lib/cart.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .masthead {
   width: 100%;
   border-bottom: 1px solid var(--jade-green);
-  padding: 16px;
+  padding: 18px;
 }
 
 .masthead > .container {
@@ -12,11 +12,17 @@
 
 .masthead .logo {
   width: 100%;
-  max-width: 240px;
+  max-width: 220px;
   object-fit: contain;
   opacity: 0.85;
 }
 
 .masthead .logo:hover {
   opacity: 0.65;
+}
+
+.masthead-nav {
+  display: flex;
+  grid-gap: 10px;
+  align-items: center;
 }
