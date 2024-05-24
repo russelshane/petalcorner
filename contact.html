@@ -4,9 +4,8 @@
     <!--
       Darsler Russel Shane Fortes
       Christian Jonard Piamonte
-      Troy Dela Pena
      -->
-    <title>Your Cart | petalcorner.</title>
+    <title>Contact | petalcorner.</title>
 
     <!-- Site Data -->
     <meta charset="utf-8" />
@@ -26,19 +25,6 @@
   </head>
 
   <body>
-    <script>
-      window.onload = function () {
-        var products = JSON.parse(localStorage.getItem("products"));
-        var cartItems = document.getElementById("myCart");
-        var cart = document.querySelector("cart-items");
-
-        products.forEach((product) => {
-          let li = document.createElement("li");
-          li.innerText = product;
-          cartItems.appendChild(li);
-        });
-      };
-    </script>
     <header class="masthead">
       <div class="container">
         <a href="index.html" style="display: block; text-decoration: none">
@@ -66,12 +52,21 @@
         </nav>
       </div>
     </header>
-
-    <div class="cart">
-      <h2 id="isEmpty">Your cart</h2>
-
-      <!-- Cart Items -->
-      <ul class="cart-items" id="myCart"></ul>
+    <div class="hero">
+      <div class="hero-container">
+        <h1>Contact Us</h1>
+        <p>
+          <b
+            ><a href="mailto:hello@petalcorner.com">hello@petalcorner.com</a></b
+          >
+        </p>
+        <p>
+          <i
+            >We typically reply within 1-2 business days regarding your
+            inquiry.</i
+          >
+        </p>
+      </div>
     </div>
 
     <script src="lib/cart.js"></script>

@@ -4,9 +4,8 @@
     <!--
       Darsler Russel Shane Fortes
       Christian Jonard Piamonte
-      Troy Dela Pena
      -->
-    <title>Your Cart | petalcorner.</title>
+    <title>About | petalcorner.</title>
 
     <!-- Site Data -->
     <meta charset="utf-8" />
@@ -26,19 +25,6 @@
   </head>
 
   <body>
-    <script>
-      window.onload = function () {
-        var products = JSON.parse(localStorage.getItem("products"));
-        var cartItems = document.getElementById("myCart");
-        var cart = document.querySelector("cart-items");
-
-        products.forEach((product) => {
-          let li = document.createElement("li");
-          li.innerText = product;
-          cartItems.appendChild(li);
-        });
-      };
-    </script>
     <header class="masthead">
       <div class="container">
         <a href="index.html" style="display: block; text-decoration: none">
@@ -66,12 +52,20 @@
         </nav>
       </div>
     </header>
-
-    <div class="cart">
-      <h2 id="isEmpty">Your cart</h2>
-
-      <!-- Cart Items -->
-      <ul class="cart-items" id="myCart"></ul>
+    <div class="hero">
+      <div class="hero-container">
+        <h1>About Us</h1>
+        <p>We've created an exciting destination for gifting and sharing.</p>
+        <p>
+          We engage our customers through differentiated products and unique
+          services, helping them connect with the important people in their
+          lives.
+        </p>
+        <p>
+          PetalCorner is proud to offer beautiful flowers that are always 100%
+          arranged and delivered by expert local florists.
+        </p>
+      </div>
     </div>
 
     <script src="lib/cart.js"></script>
